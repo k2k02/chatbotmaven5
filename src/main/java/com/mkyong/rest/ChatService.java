@@ -50,7 +50,8 @@ public class ChatService {
         Bot bot = new Bot(botname, url.getPath());
         Chat chat = new Chat(bot);
         String response = chat.multisentenceRespond(msg);
-        return Response.status(200).entity("Bot~" + response).build();
+        String testmsg="test";
+        return Response.status(200).entity("Bot~" + testmsg).build();
     }
 
 }
